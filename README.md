@@ -3,13 +3,6 @@
 A desktop paint application made with **Python, Tkinter and Pillow**.
 It started from the "Build a Paint Application" lesson, then I added the weekly requirements, extra features and a new design.
 
-## How to run
-
-```bash
-python -m pip install pillow
-python paint_application.py
-```
-
 ## Screenshot of the whole UI
 
 ![Paint'Ered UI](SS/PaintAppGUI.jpg)
