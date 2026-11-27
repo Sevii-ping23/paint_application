@@ -40,6 +40,7 @@ size_slider = tk.Scale(side, from_=1, to=100, orient="horizontal",
                        command=change_brush_size, length=190,
                        bg=PANEL, fg=TEXT, troughcolor=ACCENT, highlightthickness=0)
 ```
+![Brush Range UI](SS/BrushRange.jpg)
 
 ### 2. Undo button (15 pts)
 
@@ -51,6 +52,7 @@ def undo(event=None):
     set_image(undo_stack.pop())
     refresh_canvas()
 ```
+![Undo Button UI](SS/UndoButton.jpg)
 
 ### 3. Filled shapes (20 pts)
 
@@ -60,10 +62,12 @@ A **Fill shapes with color** checkbox sits in the side panel. When it is ticked,
 if filled and name in FILLABLE:
     draw.polygon(points, fill=color)
 ```
+![Filled Shapes UI](SS/FilledShapes.jpg)
 
 ### 4. Extra shape tools (20 pts)
 
 I added **Triangle, Diamond, Hexagon and Star** (the task only asked for one). Each shape is a list of corner points that fits inside the box you drag. The same function (`shape_points`) is used for the live preview and for the final drawing in the Pillow image, so the shape is saved exactly as previewed.
+![Extra Shapes](SS/ExtraShapes.jpg)
 
 ### 5. Confirm before clearing (20 pts)
 
@@ -75,6 +79,7 @@ answer = messagebox.askyesno("Clear canvas",
 if not answer:
     return
 ```
+![Clear Confirmation](SS/ClearConfirm.jpg)
 
 ### 6. Quick colors (20 pts)
 
@@ -84,6 +89,7 @@ Six one-click color swatches in the side panel: **black, red, blue, green, yello
 QUICK_COLORS = [("Black", "#000000"), ("Red", "#E53935"), ("Blue", "#1E5BFF"),
                 ("Green", "#2E9E4F"), ("Yellow", "#FFD600"), ("Purple", "#8E24AA")]
 ```
+![Quick Colors](SS/QuickColors.jpg)
 
 ---
 
