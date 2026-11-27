@@ -12,7 +12,7 @@ python paint_application.py
 
 ## Screenshot of the whole UI
 
-![Paint'Ered UI](screenshot.png)
+![Paint'Ered UI](SS/PaintAppGUI.jpg)
 
 > Run the program, draw something, and save a screenshot of the whole window as `screenshot.png` in this folder.
 
